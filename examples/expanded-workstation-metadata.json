@@ -1,0 +1,2191 @@
+{
+  "schema_version": "1.0",
+  "collector_version": "1.1.0",
+  "collected_utc": "2026-11-05T13:56:52.9442359Z",
+  "scope": "Current user; curated default/candidate locations; live metadata queries only.",
+  "os": {
+    "caption": "Microsoft Windows 11 Pro",
+    "version": "10.0.26200",
+    "build": "26200"
+  },
+  "directories": [
+    {
+      "path": "%USERPROFILE%\\.claude",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.claude\\projects",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.claude\\file-history",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.claude\\debug",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.claude\\tasks",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.claude\\plans",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.claude\\paste-cache",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%TEMP%\\claude",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.gemini",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.gemini\\tmp",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.gemini\\history",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.copilot",
+      "status": "present",
+      "direct_file_count": 1,
+      "direct_file_bytes": 131,
+      "immediate_directory_count": 1,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-08-01T16:52:50.9108891Z",
+      "newest_direct_file_modified_utc": "2026-08-01T16:52:50.9108891Z",
+      "extension_counts": [
+        {
+          "extension": ".json",
+          "count": 1
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.copilot\\session-state",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.copilot\\logs",
+      "status": "present",
+      "direct_file_count": 1,
+      "direct_file_bytes": 704,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-09-09T23:08:45.0208504Z",
+      "newest_direct_file_modified_utc": "2026-09-09T23:08:45.0208504Z",
+      "extension_counts": [
+        {
+          "extension": ".log",
+          "count": 1
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.copilot\\command-history-state",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\copilot",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.config\\opencode",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.local\\share\\opencode",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.local\\share\\opencode\\log",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.local\\share\\opencode\\snapshot",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.local\\share\\opencode\\storage",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.local\\state\\opencode",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.cache\\opencode",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Code\\User\\globalStorage",
+      "status": "present",
+      "direct_file_count": 5,
+      "direct_file_bytes": 513267,
+      "immediate_directory_count": 4,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-09-01T20:00:27.6036086Z",
+      "newest_direct_file_modified_utc": "2026-09-09T22:50:01.5082347Z",
+      "extension_counts": [
+        {
+          "extension": ".backup",
+          "count": 1
+        },
+        {
+          "extension": ".db",
+          "count": 1
+        },
+        {
+          "extension": ".json",
+          "count": 2
+        },
+        {
+          "extension": ".vscdb",
+          "count": 1
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\Code\\User\\workspaceStorage",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 2,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\Code\\logs",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\Code\\User\\globalStorage\\saoudrizwan.claude-dev\\tasks",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Code\\User\\globalStorage\\rooveterinaryinc.roo-cline\\tasks",
+      "status": "present",
+      "direct_file_count": 1,
+      "direct_file_bytes": 2513,
+      "immediate_directory_count": 2,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-08-01T16:54:13.6471201Z",
+      "newest_direct_file_modified_utc": "2026-08-01T16:54:13.6471201Z",
+      "extension_counts": [
+        {
+          "extension": ".json",
+          "count": 1
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.cline",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.cline\\data",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.cline\\data\\sessions",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.cline\\data\\db",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.cline\\data\\logs",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.continue",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.continue\\sessions",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.continue\\logs",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.continue\\dev_data",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.continue\\index",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.continue\\.diffs",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Cursor\\User\\globalStorage",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Cursor\\User\\workspaceStorage",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Cursor\\logs",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.cursor\\projects",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Windsurf",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.codeium",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.openclaw",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.openclaw\\agents",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.hermes",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\hermes",
+      "status": "present",
+      "direct_file_count": 49,
+      "direct_file_bytes": 350912778,
+      "immediate_directory_count": 49,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-08-25T12:27:18.6357240Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:56:49.0043986Z",
+      "extension_counts": [
+        {
+          "extension": ".bak",
+          "count": 3
+        },
+        {
+          "extension": ".db",
+          "count": 5
+        },
+        {
+          "extension": ".env",
+          "count": 1
+        },
+        {
+          "extension": ".etag",
+          "count": 1
+        },
+        {
+          "extension": ".exe",
+          "count": 1
+        },
+        {
+          "extension": ".json",
+          "count": 11
+        },
+        {
+          "extension": ".lock",
+          "count": 11
+        },
+        {
+          "extension": ".log",
+          "count": 1
+        },
+        {
+          "extension": ".md",
+          "count": 1
+        },
+        {
+          "extension": ".pid",
+          "count": 1
+        },
+        {
+          "extension": ".txt",
+          "count": 1
+        },
+        {
+          "extension": ".yaml",
+          "count": 2
+        },
+        {
+          "extension": "(none)",
+          "count": 1
+        },
+        {
+          "extension": "(other)",
+          "count": 9
+        }
+      ],
+      "direct_wal_suffix_count": 2,
+      "direct_shm_suffix_count": 2
+    },
+    {
+      "path": "%LOCALAPPDATA%\\hermes\\profiles",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 4,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\Hermes",
+      "status": "present",
+      "direct_file_count": 20,
+      "direct_file_bytes": 151699,
+      "immediate_directory_count": 16,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-08-25T12:45:48.3589256Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:34:39.6703999Z",
+      "extension_counts": [
+        {
+          "extension": ".db",
+          "count": 1
+        },
+        {
+          "extension": ".json",
+          "count": 14
+        },
+        {
+          "extension": "(none)",
+          "count": 4
+        },
+        {
+          "extension": "(other)",
+          "count": 1
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\Hermes\\Local Storage\\leveldb",
+      "status": "present",
+      "direct_file_count": 10,
+      "direct_file_bytes": 2935348,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-08-25T12:45:48.4465576Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:34:39.6321208Z",
+      "extension_counts": [
+        {
+          "extension": ".ldb",
+          "count": 4
+        },
+        {
+          "extension": ".log",
+          "count": 1
+        },
+        {
+          "extension": ".old",
+          "count": 1
+        },
+        {
+          "extension": "(none)",
+          "count": 4
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\OpenClawTray",
+      "status": "present",
+      "direct_file_count": 2,
+      "direct_file_bytes": 2264,
+      "immediate_directory_count": 2,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-07-23T15:18:38.4512634Z",
+      "newest_direct_file_modified_utc": "2026-07-23T15:18:44.5456250Z",
+      "extension_counts": [
+        {
+          "extension": ".json",
+          "count": 2
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%LOCALAPPDATA%\\OpenClawTray",
+      "status": "present",
+      "direct_file_count": 448,
+      "direct_file_bytes": 321878004,
+      "immediate_directory_count": 102,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-06-30T23:22:24.0000000Z",
+      "newest_direct_file_modified_utc": "2026-07-23T17:07:52.3604715Z",
+      "extension_counts": [
+        {
+          "extension": ".dat",
+          "count": 1
+        },
+        {
+          "extension": ".dll",
+          "count": 364
+        },
+        {
+          "extension": ".exe",
+          "count": 2
+        },
+        {
+          "extension": ".json",
+          "count": 10
+        },
+        {
+          "extension": ".lib",
+          "count": 2
+        },
+        {
+          "extension": ".log",
+          "count": 1
+        },
+        {
+          "extension": ".metal",
+          "count": 1
+        },
+        {
+          "extension": ".pdb",
+          "count": 7
+        },
+        {
+          "extension": ".pri",
+          "count": 7
+        },
+        {
+          "extension": ".ps1",
+          "count": 1
+        },
+        {
+          "extension": ".winmd",
+          "count": 52
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\Block\\goose\\data",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Block\\goose\\data\\sessions",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.openhands",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\invokeai",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\invokeai\\outputs",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\invokeai\\databases",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.codex",
+      "status": "present",
+      "direct_file_count": 40,
+      "direct_file_bytes": 552115601,
+      "immediate_directory_count": 21,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-08-30T18:16:21.8216563Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:56:51.5432392Z",
+      "extension_counts": [
+        {
+          "extension": ".backup",
+          "count": 1
+        },
+        {
+          "extension": ".bak",
+          "count": 1
+        },
+        {
+          "extension": ".guard",
+          "count": 2
+        },
+        {
+          "extension": ".json",
+          "count": 5
+        },
+        {
+          "extension": ".jsonl",
+          "count": 1
+        },
+        {
+          "extension": ".lock",
+          "count": 3
+        },
+        {
+          "extension": ".sqlite",
+          "count": 6
+        },
+        {
+          "extension": ".toml",
+          "count": 1
+        },
+        {
+          "extension": "(none)",
+          "count": 2
+        },
+        {
+          "extension": "(other)",
+          "count": 18
+        }
+      ],
+      "direct_wal_suffix_count": 5,
+      "direct_shm_suffix_count": 5
+    },
+    {
+      "path": "%USERPROFILE%\\.codex\\sessions",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 1,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.codex\\archived_sessions",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.codex\\log",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.codex\\tmp",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 2,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.codex\\sqlite",
+      "status": "present",
+      "direct_file_count": 6,
+      "direct_file_bytes": 9924096,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-10-30T12:47:43.0711986Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:19:09.9973611Z",
+      "extension_counts": [
+        {
+          "extension": ".db",
+          "count": 2
+        },
+        {
+          "extension": "(other)",
+          "count": 4
+        }
+      ],
+      "direct_wal_suffix_count": 2,
+      "direct_shm_suffix_count": 2
+    },
+    {
+      "path": "%USERPROFILE%\\.codex\\shell_snapshots",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Codex",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 1,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\Codex\\IndexedDB",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Codex\\Local Storage\\leveldb",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Codex\\Session Storage",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Codex",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 1,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%LOCALAPPDATA%\\OpenAI",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 2,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.ollama",
+      "status": "present",
+      "direct_file_count": 3,
+      "direct_file_bytes": 515,
+      "immediate_directory_count": 2,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-08-01T16:24:28.4297433Z",
+      "newest_direct_file_modified_utc": "2026-08-01T16:31:23.5863764Z",
+      "extension_counts": [
+        {
+          "extension": ".pub",
+          "count": 1
+        },
+        {
+          "extension": "(none)",
+          "count": 2
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.ollama\\models",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 2,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.ollama\\models\\manifests",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 1,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.ollama\\models\\blobs",
+      "status": "present",
+      "direct_file_count": 5,
+      "direct_file_bytes": 20201253829,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-08-01T16:30:17.5006165Z",
+      "newest_direct_file_modified_utc": "2026-08-01T16:30:19.8407809Z",
+      "extension_counts": [
+        {
+          "extension": "(none)",
+          "count": 5
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Ollama",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\ollama app.exe",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 1,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.lmstudio",
+      "status": "present",
+      "direct_file_count": 2,
+      "direct_file_bytes": 3954,
+      "immediate_directory_count": 15,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-08-03T18:55:09.1759636Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:19:00.2794013Z",
+      "extension_counts": [
+        {
+          "extension": ".json",
+          "count": 2
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.lmstudio\\models",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 8,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.lmstudio\\conversations",
+      "status": "present",
+      "direct_file_count": 1,
+      "direct_file_bytes": 65425,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-11-05T13:24:30.4617519Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:24:30.4617519Z",
+      "extension_counts": [
+        {
+          "extension": ".json",
+          "count": 1
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\LM Studio",
+      "status": "present",
+      "direct_file_count": 5,
+      "direct_file_bytes": 41588,
+      "immediate_directory_count": 12,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-02-23T20:58:30.0087916Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:39:47.7175657Z",
+      "extension_counts": [
+        {
+          "extension": ".updaterid",
+          "count": 1
+        },
+        {
+          "extension": "(none)",
+          "count": 4
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\LM Studio\\IndexedDB",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\LM Studio\\Local Storage\\leveldb",
+      "status": "present",
+      "direct_file_count": 6,
+      "direct_file_bytes": 6038,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-02-23T20:58:21.7299327Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:39:47.6993228Z",
+      "extension_counts": [
+        {
+          "extension": ".log",
+          "count": 1
+        },
+        {
+          "extension": ".old",
+          "count": 1
+        },
+        {
+          "extension": "(none)",
+          "count": 4
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\LM Studio\\Session Storage",
+      "status": "present",
+      "direct_file_count": 6,
+      "direct_file_bytes": 14875,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-02-23T20:58:29.7972501Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:39:47.6630242Z",
+      "extension_counts": [
+        {
+          "extension": ".log",
+          "count": 1
+        },
+        {
+          "extension": ".old",
+          "count": 1
+        },
+        {
+          "extension": "(none)",
+          "count": 4
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.cache\\huggingface",
+      "status": "present",
+      "direct_file_count": 1,
+      "direct_file_bytes": 5778,
+      "immediate_directory_count": 3,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-11-05T03:17:19.0435650Z",
+      "newest_direct_file_modified_utc": "2026-11-05T03:17:19.0435650Z",
+      "extension_counts": [
+        {
+          "extension": ".json",
+          "count": 1
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.cache\\huggingface\\hub",
+      "status": "present",
+      "direct_file_count": 1,
+      "direct_file_bytes": 195,
+      "immediate_directory_count": 5,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-08-28T17:52:15.4458813Z",
+      "newest_direct_file_modified_utc": "2026-08-28T17:52:15.4458813Z",
+      "extension_counts": [
+        {
+          "extension": ".tag",
+          "count": 1
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.cache\\huggingface\\xet",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 2,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\.cache\\torch\\hub",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\comfy-cli",
+      "status": "present",
+      "direct_file_count": 1,
+      "direct_file_bytes": 219,
+      "immediate_directory_count": 1,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-08-25T17:51:59.0767791Z",
+      "newest_direct_file_modified_utc": "2026-08-25T17:51:59.0767791Z",
+      "extension_counts": [
+        {
+          "extension": ".ini",
+          "count": 1
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%USERPROFILE%\\ComfyUI\\output",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\ComfyUI\\input",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\ComfyUI\\temp",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\Documents\\ComfyUI\\output",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\Documents\\ComfyUI\\input",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\Documents\\ComfyUI\\temp",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Microsoft\\Windows\\Recent",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 2,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\Microsoft\\Windows\\Recent\\AutomaticDestinations",
+      "status": "present",
+      "direct_file_count": 4,
+      "direct_file_bytes": 13312,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-11-03T15:21:55.4568071Z",
+      "newest_direct_file_modified_utc": "2026-11-05T03:11:46.1199818Z",
+      "extension_counts": [
+        {
+          "extension": "(other)",
+          "count": 4
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\Microsoft\\Windows\\Recent\\CustomDestinations",
+      "status": "present",
+      "direct_file_count": 6,
+      "direct_file_bytes": 25880,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-11-04T03:09:37.3595029Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:19:15.0160248Z",
+      "extension_counts": [
+        {
+          "extension": "(other)",
+          "count": 6
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%WINDIR%\\Prefetch",
+      "status": "access_denied"
+    }
+  ],
+  "files": [
+    {
+      "path": "%USERPROFILE%\\.claude.json",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.claude\\settings.json",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.claude\\history.jsonl",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.gemini\\settings.json",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.copilot\\config.json",
+      "status": "present",
+      "bytes": 131,
+      "modified_utc": "2026-08-01T16:52:50.9108891Z"
+    },
+    {
+      "path": "%USERPROFILE%\\.copilot\\settings.json",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.copilot\\session-store.db",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.copilot\\session-store.db-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.copilot\\session-store.db-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.local\\share\\opencode\\opencode.db",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.local\\share\\opencode\\opencode.db-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.local\\share\\opencode\\opencode.db-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.continue\\config.yaml",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.continue\\config.json",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.cline\\data\\db\\sessions.db",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.cline\\data\\db\\sessions.db-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\.cline\\data\\db\\sessions.db-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\hermes\\state.db",
+      "status": "present",
+      "bytes": 86765568,
+      "modified_utc": "2026-11-05T13:45:04.9705472Z"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\hermes\\state.db-wal",
+      "status": "present",
+      "bytes": 325512,
+      "modified_utc": "2026-11-05T13:56:05.0866283Z"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\hermes\\state.db-shm",
+      "status": "present",
+      "bytes": 32768,
+      "modified_utc": "2026-11-05T13:25:01.3396037Z"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\hermes\\config.yaml",
+      "status": "present",
+      "bytes": 8140,
+      "modified_utc": "2026-10-29T18:38:55.1959288Z"
+    },
+    {
+      "path": "%USERPROFILE%\\.openclaw\\openclaw.json",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Block\\goose\\data\\sessions\\sessions.db",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Block\\goose\\data\\sessions\\sessions.db-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Block\\goose\\data\\sessions\\sessions.db-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Code\\User\\globalStorage\\state.vscdb",
+      "status": "present",
+      "bytes": 241664,
+      "modified_utc": "2026-09-09T22:42:45.1835350Z"
+    },
+    {
+      "path": "%APPDATA%\\Cursor\\User\\globalStorage\\state.vscdb",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\invokeai\\invokeai.yaml",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\invokeai\\databases\\invokeai.db",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%USERPROFILE%\\NTUSER.DAT",
+      "status": "present",
+      "bytes": 19922944,
+      "modified_utc": "2026-11-05T13:04:46.1190148Z"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Windows\\UsrClass.dat",
+      "status": "present",
+      "bytes": 6553600,
+      "modified_utc": "2026-11-05T13:04:46.1839765Z"
+    },
+    {
+      "path": "%WINDIR%\\System32\\config\\SYSTEM",
+      "status": "present",
+      "bytes": 25690112,
+      "modified_utc": "2026-11-05T03:55:42.8878806Z"
+    },
+    {
+      "path": "%WINDIR%\\System32\\config\\SOFTWARE",
+      "status": "present",
+      "bytes": 181141504,
+      "modified_utc": "2026-11-05T03:55:42.8878806Z"
+    },
+    {
+      "path": "%WINDIR%\\AppCompat\\Programs\\Amcache.hve",
+      "status": "access_denied"
+    },
+    {
+      "path": "%WINDIR%\\System32\\winevt\\Logs\\Security.evtx",
+      "status": "present",
+      "bytes": 20975616,
+      "modified_utc": "2026-11-05T13:56:28.9612942Z"
+    },
+    {
+      "path": "%WINDIR%\\System32\\winevt\\Logs\\Windows PowerShell.evtx",
+      "status": "present",
+      "bytes": 15732736,
+      "modified_utc": "2026-11-05T13:53:19.1218531Z"
+    },
+    {
+      "path": "%WINDIR%\\System32\\winevt\\Logs\\Microsoft-Windows-PowerShell%4Operational.evtx",
+      "status": "present",
+      "bytes": 15732736,
+      "modified_utc": "2026-11-05T13:53:20.0212408Z"
+    },
+    {
+      "path": "%WINDIR%\\System32\\winevt\\Logs\\PowerShellCore%4Operational.evtx",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%WINDIR%\\System32\\winevt\\Logs\\Microsoft-Windows-Sysmon%4Operational.evtx",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Microsoft\\Windows\\PowerShell\\PSReadLine\\ConsoleHost_history.txt",
+      "status": "present",
+      "bytes": 19808,
+      "modified_utc": "2026-09-08T21:05:46.9985377Z"
+    },
+    {
+      "path": "%PROGRAMDATA%\\Microsoft\\Search\\Data\\Applications\\Windows\\Windows.db",
+      "status": "access_denied"
+    },
+    {
+      "path": "%PROGRAMDATA%\\Microsoft\\Search\\Data\\Applications\\Windows\\Windows.edb",
+      "status": "not_found_at_checked_path"
+    }
+  ],
+  "registry": [
+    {
+      "key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\RecentDocs",
+      "status": "present",
+      "direct_value_name_count": 0,
+      "immediate_subkey_count": 0
+    },
+    {
+      "key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32\\OpenSavePidlMRU",
+      "status": "present",
+      "direct_value_name_count": 0,
+      "immediate_subkey_count": 5
+    },
+    {
+      "key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\ComDlg32\\LastVisitedPidlMRU",
+      "status": "present",
+      "direct_value_name_count": 6,
+      "immediate_subkey_count": 0
+    },
+    {
+      "key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\WordWheelQuery",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Explorer\\UserAssist",
+      "status": "present",
+      "direct_value_name_count": 0,
+      "immediate_subkey_count": 9
+    },
+    {
+      "key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "status": "present",
+      "direct_value_name_count": 9,
+      "immediate_subkey_count": 0
+    },
+    {
+      "key": "HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "status": "present",
+      "direct_value_name_count": 0,
+      "immediate_subkey_count": 0
+    },
+    {
+      "key": "HKCU\\Software\\Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\BagMRU",
+      "status": "present",
+      "direct_value_name_count": 28,
+      "immediate_subkey_count": 25
+    },
+    {
+      "key": "HKCU\\Software\\Classes\\Local Settings\\Software\\Microsoft\\Windows\\Shell\\Bags",
+      "status": "present",
+      "direct_value_name_count": 0,
+      "immediate_subkey_count": 294
+    },
+    {
+      "key": "HKCU\\Software\\Microsoft\\Windows\\Shell\\BagMRU",
+      "status": "present",
+      "direct_value_name_count": 3,
+      "immediate_subkey_count": 0
+    },
+    {
+      "key": "HKCU\\Software\\Microsoft\\Windows\\Shell\\Bags",
+      "status": "present",
+      "direct_value_name_count": 0,
+      "immediate_subkey_count": 1
+    },
+    {
+      "key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "status": "present",
+      "direct_value_name_count": 1,
+      "immediate_subkey_count": 0
+    },
+    {
+      "key": "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\RunOnce",
+      "status": "present",
+      "direct_value_name_count": 0,
+      "immediate_subkey_count": 0
+    },
+    {
+      "key": "HKLM\\SYSTEM\\CurrentControlSet\\Services\\bam\\State\\UserSettings",
+      "status": "access_denied"
+    },
+    {
+      "key": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\ScriptBlockLogging",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "key": "HKCU\\SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\ScriptBlockLogging",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "key": "HKLM\\SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\Transcription",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "key": "HKCU\\SOFTWARE\\Policies\\Microsoft\\Windows\\PowerShell\\Transcription",
+      "status": "not_found_at_checked_path"
+    }
+  ],
+  "browsers": [
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data",
+      "status": "present",
+      "direct_file_count": 9,
+      "direct_file_bytes": 4304396,
+      "immediate_directory_count": 43,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2024-09-05T17:46:43.2053386Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:55:43.4136564Z",
+      "extension_counts": [
+        {
+          "extension": ".pma",
+          "count": 1
+        },
+        {
+          "extension": "(none)",
+          "count": 8
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data",
+      "observation": "profile_discovery",
+      "candidate_directory_count": 1,
+      "profile_limit": 32,
+      "profile_limit_reached": false,
+      "profile_labels": "Names replaced with ordinal placeholders; ordering is snapshot-specific."
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>",
+      "status": "present",
+      "direct_file_count": 50,
+      "direct_file_bytes": 139946166,
+      "immediate_directory_count": 58,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2024-09-05T17:46:45.4284946Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:56:13.4497350Z",
+      "extension_counts": [
+        {
+          "extension": ".bak",
+          "count": 2
+        },
+        {
+          "extension": ".bf",
+          "count": 1
+        },
+        {
+          "extension": ".db",
+          "count": 3
+        },
+        {
+          "extension": ".ico",
+          "count": 1
+        },
+        {
+          "extension": ".old",
+          "count": 1
+        },
+        {
+          "extension": ".pb",
+          "count": 1
+        },
+        {
+          "extension": ".png",
+          "count": 1
+        },
+        {
+          "extension": ".txt",
+          "count": 1
+        },
+        {
+          "extension": "(none)",
+          "count": 37
+        },
+        {
+          "extension": "(other)",
+          "count": 2
+        }
+      ],
+      "direct_wal_suffix_count": 1,
+      "direct_shm_suffix_count": 1
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\History",
+      "status": "present",
+      "bytes": 98205696,
+      "modified_utc": "2026-11-05T13:55:42.8233755Z"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\History-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\History-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\Web Data",
+      "status": "present",
+      "bytes": 196608,
+      "modified_utc": "2026-11-05T13:54:34.9911070Z"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\Web Data-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\Web Data-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\Favicons",
+      "status": "present",
+      "bytes": 33488896,
+      "modified_utc": "2026-11-05T13:55:42.8344785Z"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\Favicons-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\Favicons-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\Network\\Cookies",
+      "status": "present",
+      "bytes": 3244032,
+      "modified_utc": "2026-11-05T13:56:50.2768064Z"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\Network\\Cookies-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\Network\\Cookies-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\IndexedDB",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 404,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\Local Storage\\leveldb",
+      "status": "present",
+      "direct_file_count": 29,
+      "direct_file_bytes": 44725294,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2025-10-02T14:03:38.9071336Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:54:42.8682187Z",
+      "extension_counts": [
+        {
+          "extension": ".ldb",
+          "count": 23
+        },
+        {
+          "extension": ".log",
+          "count": 1
+        },
+        {
+          "extension": ".old",
+          "count": 1
+        },
+        {
+          "extension": "(none)",
+          "count": 4
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\Session Storage",
+      "status": "present",
+      "direct_file_count": 8,
+      "direct_file_bytes": 73333,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-11-05T13:05:09.6370131Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:46:26.0544611Z",
+      "extension_counts": [
+        {
+          "extension": ".ldb",
+          "count": 3
+        },
+        {
+          "extension": ".log",
+          "count": 1
+        },
+        {
+          "extension": "(none)",
+          "count": 4
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\Service Worker\\CacheStorage",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 158,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\<profile-1>\\Cache\\Cache_Data",
+      "status": "present",
+      "direct_file_count": 2302,
+      "direct_file_bytes": 433694681,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-09-18T23:50:35.8995123Z",
+      "newest_direct_file_modified_utc": "2026-11-05T13:55:35.4324376Z",
+      "extension_counts": [
+        {
+          "extension": "(none)",
+          "count": 2302
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data",
+      "status": "present",
+      "direct_file_count": 12,
+      "direct_file_bytes": 159920,
+      "immediate_directory_count": 59,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2024-12-29T18:00:48.3781577Z",
+      "newest_direct_file_modified_utc": "2026-10-29T14:14:47.4779256Z",
+      "extension_counts": [
+        {
+          "extension": ".db",
+          "count": 1
+        },
+        {
+          "extension": "(none)",
+          "count": 10
+        },
+        {
+          "extension": "(other)",
+          "count": 1
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data",
+      "observation": "profile_discovery",
+      "candidate_directory_count": 1,
+      "profile_limit": 32,
+      "profile_limit_reached": false,
+      "profile_labels": "Names replaced with ordinal placeholders; ordering is snapshot-specific."
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>",
+      "status": "present",
+      "direct_file_count": 39,
+      "direct_file_bytes": 5034562,
+      "immediate_directory_count": 65,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2024-12-29T18:00:48.3370497Z",
+      "newest_direct_file_modified_utc": "2026-10-29T14:14:47.5157040Z",
+      "extension_counts": [
+        {
+          "extension": ".bak",
+          "count": 1
+        },
+        {
+          "extension": ".db",
+          "count": 3
+        },
+        {
+          "extension": ".ico",
+          "count": 1
+        },
+        {
+          "extension": ".json",
+          "count": 2
+        },
+        {
+          "extension": ".log",
+          "count": 2
+        },
+        {
+          "extension": ".old",
+          "count": 2
+        },
+        {
+          "extension": ".pb",
+          "count": 1
+        },
+        {
+          "extension": ".xml",
+          "count": 1
+        },
+        {
+          "extension": "(none)",
+          "count": 25
+        },
+        {
+          "extension": "(other)",
+          "count": 1
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\History",
+      "status": "present",
+      "bytes": 294912,
+      "modified_utc": "2026-10-29T14:14:47.4924510Z"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\History-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\History-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\Web Data",
+      "status": "present",
+      "bytes": 233472,
+      "modified_utc": "2026-10-29T14:14:47.5157040Z"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\Web Data-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\Web Data-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\Favicons",
+      "status": "present",
+      "bytes": 69632,
+      "modified_utc": "2026-10-29T14:14:47.3669848Z"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\Favicons-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\Favicons-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\Network\\Cookies",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\Network\\Cookies-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\Network\\Cookies-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\IndexedDB",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\Local Storage\\leveldb",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\Session Storage",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\Service Worker\\CacheStorage",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\<profile-1>\\Cache\\Cache_Data",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\Mozilla\\Firefox\\Profiles",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 2,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles",
+      "observation": "profile_discovery",
+      "candidate_directory_count": 2,
+      "profile_limit": 32,
+      "profile_limit_reached": false,
+      "profile_labels": "Names replaced with ordinal placeholders; ordering is snapshot-specific."
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-1>",
+      "status": "present",
+      "direct_file_count": 1,
+      "direct_file_bytes": 47,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-05-29T19:20:46.7153971Z",
+      "newest_direct_file_modified_utc": "2026-05-29T19:20:46.7153971Z",
+      "extension_counts": [
+        {
+          "extension": ".json",
+          "count": 1
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-1>\\places.sqlite",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-1>\\places.sqlite-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-1>\\places.sqlite-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-1>\\cookies.sqlite",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-1>\\cookies.sqlite-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-1>\\cookies.sqlite-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-1>\\favicons.sqlite",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-1>\\favicons.sqlite-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-1>\\favicons.sqlite-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-1>\\storage\\default",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-1>\\sessionstore-backups",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-2>",
+      "status": "present",
+      "direct_file_count": 25,
+      "direct_file_bytes": 3318498,
+      "immediate_directory_count": 12,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": "2026-05-29T19:20:46.7321834Z",
+      "newest_direct_file_modified_utc": "2026-10-29T14:14:54.9210092Z",
+      "extension_counts": [
+        {
+          "extension": ".db",
+          "count": 3
+        },
+        {
+          "extension": ".ini",
+          "count": 1
+        },
+        {
+          "extension": ".js",
+          "count": 1
+        },
+        {
+          "extension": ".json",
+          "count": 10
+        },
+        {
+          "extension": ".jsonlz4",
+          "count": 1
+        },
+        {
+          "extension": ".lock",
+          "count": 1
+        },
+        {
+          "extension": ".lz4",
+          "count": 1
+        },
+        {
+          "extension": ".mozlz4",
+          "count": 1
+        },
+        {
+          "extension": ".sqlite",
+          "count": 5
+        },
+        {
+          "extension": ".txt",
+          "count": 1
+        }
+      ],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-2>\\places.sqlite",
+      "status": "present",
+      "bytes": 1900544,
+      "modified_utc": "2026-10-29T14:14:54.8940045Z"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-2>\\places.sqlite-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-2>\\places.sqlite-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-2>\\cookies.sqlite",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-2>\\cookies.sqlite-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-2>\\cookies.sqlite-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-2>\\favicons.sqlite",
+      "status": "present",
+      "bytes": 229376,
+      "modified_utc": "2026-10-29T14:14:54.8708404Z"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-2>\\favicons.sqlite-wal",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-2>\\favicons.sqlite-shm",
+      "status": "not_found_at_checked_path"
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-2>\\storage\\default",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    },
+    {
+      "path": "%APPDATA%\\zen\\Profiles\\<profile-2>\\sessionstore-backups",
+      "status": "present",
+      "direct_file_count": 0,
+      "direct_file_bytes": 0,
+      "immediate_directory_count": 0,
+      "reparse_point_count": 0,
+      "oldest_direct_file_modified_utc": null,
+      "newest_direct_file_modified_utc": null,
+      "extension_counts": [],
+      "direct_wal_suffix_count": 0,
+      "direct_shm_suffix_count": 0
+    }
+  ],
+  "environment_override_presence": [
+    {
+      "name": "CODEX_HOME",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "CODEX_SQLITE_HOME",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "OLLAMA_MODELS",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "HF_HOME",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "HF_HUB_CACHE",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "HUGGINGFACE_HUB_CACHE",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "XDG_CACHE_HOME",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "TRANSFORMERS_CACHE",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "TORCH_HOME",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "CLAUDE_CONFIG_DIR",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "CLAUDE_CODE_TMPDIR",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "GEMINI_CLI_HOME",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "COPILOT_HOME",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "COPILOT_CACHE_HOME",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "XDG_DATA_HOME",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "XDG_CONFIG_HOME",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "XDG_STATE_HOME",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "OPENCODE_CONFIG",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "OPENCODE_CONFIG_DIR",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "OPENCODE_DB",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "CLINE_DIR",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "CLINE_DATA_DIR",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "CLINE_SESSION_DATA_DIR",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "CLINE_DB_DATA_DIR",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "CONTINUE_GLOBAL_DIR",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "OPENCLAW_HOME",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "OPENCLAW_STATE_DIR",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "OPENCLAW_CONFIG_PATH",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "HERMES_HOME",
+      "process_nonempty": true,
+      "user_nonempty": true,
+      "machine_nonempty": false
+    },
+    {
+      "name": "OH_PERSISTENCE_DIR",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    },
+    {
+      "name": "INVOKEAI_ROOT",
+      "process_nonempty": false,
+      "user_nonempty": false,
+      "machine_nonempty": false
+    }
+  ],
+  "limitations": [
+    "Live triage changes system traces; this output is not a forensic image or acquisition.",
+    "No contents or Registry value data were read. Metadata does not establish use, intent, execution, or attribution.",
+    "All directory counts are direct only and exclude file content. Descendant data is outside those counts.",
+    "Paths use environment aliases. Browser profile names are replaced by ordinal placeholders.",
+    "Environment values are not emitted or followed; nonempty booleans indicate candidates for separate validation.",
+    "Missing means not found at the checked path; access denied is reported separately.",
+    "Curated candidates are not universal defaults. Other users, custom roots, portable installs, WSL, containers, cloud records, and deleted artifacts are outside scope.",
+    "Reparse-point directories are skipped; profile discovery is bounded to 32 immediate candidates per browser.",
+    "EVTX-file presence and logging-policy-key presence do not establish that any particular event type was recorded.",
+    "A metadata-readable live hive or database may still be locked against consistent copying."
+  ]
+}

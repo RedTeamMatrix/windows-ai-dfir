@@ -1,0 +1,557 @@
+{
+  "schema_version": "1.0",
+  "assembled_utc": "2026-11-05T13:42:53.5263229Z",
+  "observation_date": "2026-11-05",
+  "scope": "Sequential live metadata checks; two allowlisted configuration path settings; no payload analysis. Not an atomic snapshot or forensic acquisition.",
+  "configuration": {
+    "ObservedUtc": "2026-11-05T13:41:23.4780498Z",
+    "LmStudioFileVersion": "0.4.28+2",
+    "LmStudioDownloadsFolder": "%USERPROFILE%\\.lmstudio\\models",
+    "ComfyCliConfig": "%LOCALAPPDATA%\\comfy-cli\\config.ini",
+    "ComfyRecentWorkspace": "%USERPROFILE%\\Documents\\comfy\\ComfyUI",
+    "ComfyRecentWorkspaceStatus": "not-found-at-checked-path",
+    "SettingsRead": "Only downloadsFolder and recent_workspace values used; unrelated settings not published"
+  },
+  "selected_paths": [
+    {
+      "Path": "%USERPROFILE%\\.lmstudio\\conversations",
+      "Exists": true,
+      "DirectFiles": 1,
+      "DirectDirectories": 0,
+      "Extensions": [
+        {
+          "Name": ".json",
+          "Count": 1
+        }
+      ]
+    },
+    {
+      "Path": "%USERPROFILE%\\.lmstudio\\user-files",
+      "Exists": true,
+      "DirectFiles": 0,
+      "DirectDirectories": 0,
+      "Extensions": []
+    },
+    {
+      "Path": "%USERPROFILE%\\.lmstudio\\models",
+      "Exists": true,
+      "DirectFiles": 0,
+      "DirectDirectories": 8,
+      "Extensions": []
+    },
+    {
+      "Path": "%USERPROFILE%\\.ollama\\models",
+      "Exists": true,
+      "DirectFiles": 0,
+      "DirectDirectories": 2,
+      "Extensions": []
+    },
+    {
+      "Path": "%USERPROFILE%\\.codex\\sessions",
+      "Exists": true,
+      "DirectFiles": 0,
+      "DirectDirectories": 1,
+      "Extensions": []
+    },
+    {
+      "Path": "%USERPROFILE%\\.codex\\sqlite",
+      "Exists": true,
+      "DirectFiles": 6,
+      "DirectDirectories": 0,
+      "Extensions": [
+        {
+          "Name": ".db",
+          "Count": 2
+        },
+        {
+          "Name": ".db-shm",
+          "Count": 2
+        },
+        {
+          "Name": ".db-wal",
+          "Count": 2
+        }
+      ]
+    },
+    {
+      "Path": "%USERPROFILE%\\.codex\\visualizations",
+      "Exists": true,
+      "DirectFiles": 0,
+      "DirectDirectories": 1,
+      "Extensions": []
+    },
+    {
+      "Path": "%USERPROFILE%\\.cache\\huggingface",
+      "Exists": true,
+      "DirectFiles": 1,
+      "DirectDirectories": 3,
+      "Extensions": [
+        {
+          "Name": ".json",
+          "Count": 1
+        }
+      ]
+    }
+  ],
+  "bounded_traversals": [
+    {
+      "Path": "%USERPROFILE%\\.codex\\sessions",
+      "MaximumDescendantDirectoryDepth": 4,
+      "Summary": {
+        "FileCount": 157,
+        "Bytes": 872058114.0,
+        "Extensions": [
+          {
+            "Name": ".zst",
+            "Count": 98
+          },
+          {
+            "Name": ".jsonl",
+            "Count": 59
+          }
+        ],
+        "ReparsePointsSkipped": 0
+      }
+    },
+    {
+      "Path": "%USERPROFILE%\\.codex\\visualizations",
+      "MaximumDescendantDirectoryDepth": 6,
+      "Summary": {
+        "FileCount": 0,
+        "Bytes": null,
+        "Extensions": [],
+        "ReparsePointsSkipped": 0
+      }
+    },
+    {
+      "Path": "%USERPROFILE%\\.codex\\attachments",
+      "MaximumDescendantDirectoryDepth": 2,
+      "Summary": {
+        "FileCount": 11,
+        "Bytes": 370542.0,
+        "Extensions": [
+          {
+            "Name": ".txt",
+            "Count": 10
+          },
+          {
+            "Name": ".json",
+            "Count": 1
+          }
+        ],
+        "ReparsePointsSkipped": 0
+      }
+    },
+    {
+      "Path": "%USERPROFILE%\\.lmstudio\\models",
+      "MaximumDescendantDirectoryDepth": 3,
+      "Summary": {
+        "FileCount": 5,
+        "Bytes": 52206299488.0,
+        "Extensions": [
+          {
+            "Name": ".gguf",
+            "Count": 5
+          }
+        ],
+        "ReparsePointsSkipped": 0
+      }
+    },
+    {
+      "Path": "%USERPROFILE%\\.ollama\\models",
+      "MaximumDescendantDirectoryDepth": 4,
+      "Summary": {
+        "FileCount": 6,
+        "Bytes": 20201254689.0,
+        "Extensions": [
+          {
+            "Name": "",
+            "Count": 6
+          }
+        ],
+        "ReparsePointsSkipped": 0
+      }
+    }
+  ],
+  "codex_selected_filenames": [
+    {
+      "Name": "logs_2.sqlite",
+      "Bytes": 69201920,
+      "ModifiedUTC": "2026-11-05T13:35:20.7662019Z"
+    },
+    {
+      "Name": "logs_2.sqlite-shm",
+      "Bytes": 32768,
+      "ModifiedUTC": "2026-11-05T13:19:10.6457051Z"
+    },
+    {
+      "Name": "logs_2.sqlite-wal",
+      "Bytes": 4993472,
+      "ModifiedUTC": "2026-11-05T13:35:30.7625664Z"
+    },
+    {
+      "Name": "session_index.jsonl",
+      "Bytes": 10988,
+      "ModifiedUTC": "2026-11-05T13:28:26.2168181Z"
+    },
+    {
+      "Name": "state_5.sqlite",
+      "Bytes": 651264,
+      "ModifiedUTC": "2026-11-05T13:35:03.6540849Z"
+    },
+    {
+      "Name": "state_5.sqlite-shm",
+      "Bytes": 32768,
+      "ModifiedUTC": "2026-11-05T13:19:10.6361517Z"
+    },
+    {
+      "Name": "state_5.sqlite-wal",
+      "Bytes": 4152992,
+      "ModifiedUTC": "2026-11-05T13:35:05.1008858Z"
+    },
+    {
+      "Name": "thread_history_1.sqlite",
+      "Bytes": 438714368,
+      "ModifiedUTC": "2026-11-05T13:35:32.431118Z"
+    },
+    {
+      "Name": "thread_history_1.sqlite-shm",
+      "Bytes": 32768,
+      "ModifiedUTC": "2026-11-05T13:19:20.9244344Z"
+    },
+    {
+      "Name": "thread_history_1.sqlite-wal",
+      "Bytes": 4194192,
+      "ModifiedUTC": "2026-11-05T13:35:32.437115Z"
+    }
+  ],
+  "browser_and_app_paths": [
+    {
+      "Path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\History",
+      "Status": "present",
+      "Kind": "file",
+      "Bytes": 97943552
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\History-wal",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\History-shm",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\Network\\Cookies",
+      "Status": "present",
+      "Kind": "file",
+      "Bytes": 3244032
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\Local Storage\\leveldb",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\IndexedDB",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\Session Storage",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\Service Worker\\CacheStorage",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\Sessions",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\Cache",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\Code Cache",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Google\\Chrome\\User Data\\Default\\GPUCache",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\History",
+      "Status": "present",
+      "Kind": "file",
+      "Bytes": 294912
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\History-wal",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\History-shm",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\Network\\Cookies",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\Local Storage\\leveldb",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\IndexedDB",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\Session Storage",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\Service Worker\\CacheStorage",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\Sessions",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\Cache",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\Code Cache",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%LOCALAPPDATA%\\Microsoft\\Edge\\User Data\\Default\\GPUCache",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\Codex\\web\\History",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\Codex\\web\\History-wal",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\Codex\\web\\History-shm",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\Codex\\web\\Network\\Cookies",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\Codex\\web\\Local Storage\\leveldb",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\Codex\\web\\IndexedDB",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\Codex\\web\\Session Storage",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\Codex\\web\\Service Worker\\CacheStorage",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\Codex\\web\\Sessions",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\Codex\\web\\Cache",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\Codex\\web\\Code Cache",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\Codex\\web\\GPUCache",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\LM Studio\\History",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\LM Studio\\History-wal",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\LM Studio\\History-shm",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\LM Studio\\Network\\Cookies",
+      "Status": "present",
+      "Kind": "file",
+      "Bytes": 20480
+    },
+    {
+      "Path": "%APPDATA%\\LM Studio\\Local Storage\\leveldb",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\LM Studio\\IndexedDB",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\LM Studio\\Session Storage",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\LM Studio\\Service Worker\\CacheStorage",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\LM Studio\\Sessions",
+      "Status": "not-found",
+      "Kind": null,
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\LM Studio\\Cache",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\LM Studio\\Code Cache",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    },
+    {
+      "Path": "%APPDATA%\\LM Studio\\GPUCache",
+      "Status": "present",
+      "Kind": "directory",
+      "Bytes": null
+    }
+  ],
+  "traversal_limitations": "Supplemental bounded traversals suppressed enumeration errors and therefore describe observed files, not complete counts; no reparse points followed. Portable helper has explicit error reporting.",
+  "environment_override_presence": [
+    {
+      "variable": "CODEX_HOME",
+      "process_set": false,
+      "user_set": false,
+      "machine_set": false
+    },
+    {
+      "variable": "CODEX_SQLITE_HOME",
+      "process_set": false,
+      "user_set": false,
+      "machine_set": false
+    },
+    {
+      "variable": "OLLAMA_MODELS",
+      "process_set": false,
+      "user_set": false,
+      "machine_set": false
+    },
+    {
+      "variable": "HF_HOME",
+      "process_set": false,
+      "user_set": false,
+      "machine_set": false
+    },
+    {
+      "variable": "HF_HUB_CACHE",
+      "process_set": false,
+      "user_set": false,
+      "machine_set": false
+    },
+    {
+      "variable": "XDG_CACHE_HOME",
+      "process_set": false,
+      "user_set": false,
+      "machine_set": false
+    }
+  ]
+}

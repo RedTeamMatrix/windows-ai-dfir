@@ -1,0 +1,118 @@
+{
+  "fixture_schema_version": "1.0",
+  "fixture_kind": "synthetic_analytical_records",
+  "synthetic": true,
+  "observed_on_example_workstation": false,
+  "application_schema_validated": false,
+  "reference_date": "2026-11-05",
+  "purpose": "Fictional records for practicing evidence correlation, timestamp normalization and limits of inference. This is a repository-defined envelope, not a native application or operating-system event schema.",
+  "global_assumptions": [
+    "All accounts, hosts, paths, events and service operations are fictional LAB identities. No external service was used to create this fixture.",
+    "All media and CSV material is assumed benign. No file payload is included or acquired.",
+    "Every sha256 is null because no artifact bytes were acquired or measured. Filenames, claimed sizes and copy success do not substitute for byte identity.",
+    "Clock offsets are stipulated teaching assumptions, not measured corrections. Positive offset means recorded wall time is ahead of the reference time.",
+    "Normalized time equals the raw timestamp interpreted in its declared timezone minus the stipulated clock offset. Ordering remains conditional on that clock model.",
+    "Event identifiers are fixture labels. They are not Windows Event IDs or vendor schema identifiers."
+  ],
+  "clocks": [
+    {"clock_id": "CLOCK-A", "scope": ["HOST-A", "WSL-A", "CONTAINER-A"], "recorded_minus_reference_seconds": 90, "offset_basis": "synthetic assumption", "measurement_uncertainty_seconds": null, "drift_assumption": "constant over the case interval"},
+    {"clock_id": "CLOCK-B", "scope": ["HOST-B"], "recorded_minus_reference_seconds": -30, "offset_basis": "synthetic assumption", "measurement_uncertainty_seconds": null, "drift_assumption": "constant over the case interval"},
+    {"clock_id": "CLOCK-C", "scope": ["HOST-C"], "recorded_minus_reference_seconds": -120, "offset_basis": "synthetic assumption", "measurement_uncertainty_seconds": null, "drift_assumption": "constant over the case interval"}
+  ],
+  "cases": [
+    {
+      "case_id": "LAB-CASE-01",
+      "title": "Editor to WSL/container to remote MCP to CSV and local copy",
+      "synthetic": true,
+      "application_schema_validated": false,
+      "identities": [
+        {"id": "LAB-USER-A", "role": "Fictional editor/account context; physical operator unresolved"},
+        {"id": "LAB-HARNESS-A", "role": "Fictional container process"},
+        {"id": "LAB-MCP-B", "role": "Fictional remote MCP service account"}
+      ],
+      "path_mapping": {
+        "windows_project": "C:\\LAB\\case01",
+        "wsl_project": "/mnt/c/LAB/case01",
+        "container_project": "/workspace",
+        "basis": "Fictional launch and runtime-mount inspection records in C01-02 and C01-03; does not independently identify content or a person."
+      },
+      "artifacts": [
+        {"artifact_id": "C01-INPUT", "role": "input CSV reference", "path": "C:\\LAB\\case01\\input\\lab-counts.csv", "acquired": false, "sha256": null},
+        {"artifact_id": "C01-RESPONSE", "role": "service-reported CSV response", "path": null, "request_id": "LAB-MCP-R1", "acquired": false, "sha256": null},
+        {"artifact_id": "C01-OUTPUT", "role": "candidate output CSV", "path": "C:\\LAB\\case01\\outputs\\report.csv", "container_path": "/workspace/outputs/report.csv", "acquired": false, "sha256": null},
+        {"artifact_id": "C01-COPY", "role": "candidate copied CSV", "path": "C:\\LAB\\review\\case01-report.csv", "acquired": false, "sha256": null}
+      ],
+      "events": [
+        {"event_id": "C01-01", "source_kind": "fictional editor conversation record", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T11:01:30-04:00", "raw_timestamp_encoding": "ISO8601 wall time with explicit UTC offset", "normalized_utc": "2026-10-01T15:00:00Z", "session_id": "LAB-EDITOR-S1", "operation": "Request a summary CSV from the benign input reference", "artifact_ids": ["C01-INPUT"], "outcome": "request_recorded"},
+        {"event_id": "C01-02", "source_kind": "fictional editor tool result and WSL dispatch record", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:01:31Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:00:01Z", "session_id": "LAB-EDITOR-S1", "operation": "Dispatch the harness through WSL-A with working directory /mnt/c/LAB/case01", "outcome": "dispatch_reported"},
+        {"event_id": "C01-03", "source_kind": "fictional process and runtime mount inspection record", "host_id": "WSL-A", "actor_id": "LAB-HARNESS-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:01:32Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:00:02Z", "process_instance_id": "LAB-PROC-C1", "operation": "Start CONTAINER-A; record /mnt/c/LAB/case01 mapped to /workspace", "outcome": "runtime_mapping_reported"},
+        {"event_id": "C01-04", "source_kind": "fictional harness tool-request record", "host_id": "CONTAINER-A", "actor_id": "LAB-HARNESS-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:01:33Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:00:03Z", "request_id": "LAB-MCP-R0", "process_instance_id": "LAB-PROC-C1", "operation": "Request lab_csv_summary from LAB-MCP-B", "outcome": "requested"},
+        {"event_id": "C01-05", "source_kind": "fictional service failure record", "host_id": "HOST-B", "actor_id": "LAB-MCP-B", "clock_id": "CLOCK-B", "raw_timestamp": "2026-10-01T14:59:34Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:00:04Z", "request_id": "LAB-MCP-R0", "operation": "Reject request because the referenced service-side input is unavailable", "outcome": "failed_no_output_recorded"},
+        {"event_id": "C01-06", "source_kind": "fictional harness retry request", "host_id": "CONTAINER-A", "actor_id": "LAB-HARNESS-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:01:36Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:00:06Z", "request_id": "LAB-MCP-R1", "process_instance_id": "LAB-PROC-C1", "operation": "Retry with a benign test-data identifier", "outcome": "requested"},
+        {"event_id": "C01-07", "source_kind": "fictional service receipt", "host_id": "HOST-B", "actor_id": "LAB-MCP-B", "clock_id": "CLOCK-B", "raw_timestamp": "2026-10-01T14:59:37Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:00:07Z", "request_id": "LAB-MCP-R1", "operation": "Record receipt of the retry", "outcome": "received"},
+        {"event_id": "C01-08", "source_kind": "fictional service completion record", "host_id": "HOST-B", "actor_id": "LAB-MCP-B", "clock_id": "CLOCK-B", "raw_timestamp": "2026-10-01T14:59:38Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:00:08Z", "request_id": "LAB-MCP-R1", "operation": "Report a text/csv response", "artifact_ids": ["C01-RESPONSE"], "outcome": "service_reported_success", "limitations": ["Response bytes are unavailable."]},
+        {"event_id": "C01-09", "source_kind": "fictional harness tool-result record", "host_id": "CONTAINER-A", "actor_id": "LAB-HARNESS-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:01:39Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:00:09Z", "request_id": "LAB-MCP-R1", "process_instance_id": "LAB-PROC-C1", "operation": "Record receipt of the reported CSV result", "artifact_ids": ["C01-RESPONSE"], "outcome": "result_recorded"},
+        {"event_id": "C01-10", "source_kind": "fictional process-associated file-write observation", "host_id": "CONTAINER-A", "actor_id": "LAB-HARNESS-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:01:40Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:00:10Z", "process_instance_id": "LAB-PROC-C1", "operation": "Write /workspace/outputs/report.csv", "artifact_ids": ["C01-OUTPUT"], "outcome": "file_write_recorded", "limitations": ["File bytes and response bytes were not compared."]},
+        {"event_id": "C01-11", "source_kind": "fictional editor file-interaction record", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T11:01:45-04:00", "raw_timestamp_encoding": "ISO8601 wall time with explicit UTC offset", "normalized_utc": "2026-10-01T15:00:15Z", "operation": "Open the candidate output path", "artifact_ids": ["C01-OUTPUT"], "outcome": "interaction_recorded"},
+        {"event_id": "C01-12", "source_kind": "fictional copy request", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:01:50Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:00:20Z", "copy_id": "LAB-COPY-1", "operation": "Request a local review copy", "artifact_ids": ["C01-OUTPUT", "C01-COPY"], "outcome": "requested"},
+        {"event_id": "C01-13", "source_kind": "fictional copy result and destination observation", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:01:51Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:00:21Z", "copy_id": "LAB-COPY-1", "operation": "Report copy success and destination creation", "artifact_ids": ["C01-COPY"], "outcome": "copy_reported_success", "limitations": ["Exact content identity remains unverified because both file hashes are null."]}
+      ],
+      "edges": [
+        {"edge_id": "C01-E1", "from": "C01-01", "to": "C01-03", "claim": "The recorded editor session dispatched the candidate runtime", "support": ["C01-02", "C01-03"], "status": "supported_within_synthetic_assumptions", "limits": ["Account context does not identify a physical operator."]},
+        {"edge_id": "C01-E2", "from": "C01-06", "to": "C01-09", "claim": "The retry has linked client and service records through request ID LAB-MCP-R1", "support": ["C01-06", "C01-07", "C01-08", "C01-09"], "status": "service_and_client_reported", "limits": ["No retained response payload hash or independently authenticated receipt."]},
+        {"edge_id": "C01-E3", "from": "C01-RESPONSE", "to": "C01-OUTPUT", "claim": "The written CSV contains the returned bytes", "support": ["C01-09", "C01-10"], "status": "unresolved_content_identity", "limits": ["Temporal adjacency and a common process do not establish byte identity."]},
+        {"edge_id": "C01-E4", "from": "C01-OUTPUT", "to": "C01-COPY", "claim": "The review copy is byte-identical to the candidate output", "support": ["C01-12", "C01-13"], "status": "unresolved_content_identity", "limits": ["Reported copy completion and matching paths require acquired-byte comparison."]}
+      ],
+      "negative_cases": [
+        {"negative_id": "C01-N1", "records": ["C01-04", "C01-05"], "prohibited_conclusion": "The first requested MCP call produced the output", "reason": "The matching failure record reports no output."},
+        {"negative_id": "C01-N2", "records": ["C01-08", "C01-10"], "prohibited_conclusion": "The CSV was generated locally on HOST-A", "reason": "The described service is on HOST-B; the local process recorded a subsequent write."},
+        {"negative_id": "C01-N3", "records": ["C01-11"], "prohibited_conclusion": "A person read and understood the full CSV", "reason": "A file-interaction record cannot establish attention or comprehension."},
+        {"negative_id": "C01-N4", "records": ["C01-13"], "prohibited_conclusion": "The file was transferred externally", "reason": "The described copy destination is local and no external transfer record exists."}
+      ]
+    },
+    {
+      "case_id": "LAB-CASE-02",
+      "title": "Benign image source, claimed generation, re-encode, preview and authorized test transfer",
+      "synthetic": true,
+      "application_schema_validated": false,
+      "authorization_assumption": "The fictional transfer is restricted to a LAB-controlled service and recipient; no actual service was contacted.",
+      "identities": [
+        {"id": "LAB-USER-A", "role": "Fictional image-app/editor account context"},
+        {"id": "LAB-RECIPIENT-C", "role": "Fictional LAB-controlled test recipient"}
+      ],
+      "artifacts": [
+        {"artifact_id": "C02-SOURCE", "role": "benign source-image reference", "path": "C:\\LAB\\case02\\input\\green-square.png", "acquired": false, "sha256": null},
+        {"artifact_id": "C02-OUTPUT", "role": "candidate generated or imported image", "path": "C:\\LAB\\case02\\output\\result.png", "acquired": false, "sha256": null},
+        {"artifact_id": "C02-EDIT", "role": "reported edited/re-encoded derivative", "path": "C:\\LAB\\case02\\edited\\result-review.jpg", "acquired": false, "sha256": null},
+        {"artifact_id": "C02-THUMB", "role": "reported derived preview", "path": "C:\\LAB\\case02\\cache\\preview.jpg", "acquired": false, "sha256": null},
+        {"artifact_id": "C02-REMOTE", "role": "service-reported received object", "path": "lab://HOST-C/test-objects/LAB-OBJECT-2", "acquired": false, "sha256": null}
+      ],
+      "events": [
+        {"event_id": "C02-01", "source_kind": "fictional staging record", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T11:11:30-04:00", "raw_timestamp_encoding": "ISO8601 wall time with explicit UTC offset", "normalized_utc": "2026-10-01T15:10:00Z", "operation": "Stage the benign source-image reference", "artifact_ids": ["C02-SOURCE"], "outcome": "reference_recorded"},
+        {"event_id": "C02-02", "source_kind": "fictional image-application request record", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:11:31Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:10:01Z", "request_id": "LAB-IMAGE-R1", "operation": "Queue a benign image operation referencing the source", "artifact_ids": ["C02-SOURCE"], "outcome": "requested"},
+        {"event_id": "C02-03", "source_kind": "fictional application job completion record", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:11:33Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:10:03Z", "request_id": "LAB-IMAGE-R1", "operation": "Report generation success with result.png as destination", "artifact_ids": ["C02-OUTPUT"], "outcome": "application_reported_success", "limitations": ["No process-linked output hash or independently verified job schema."]},
+        {"event_id": "C02-04", "source_kind": "fictional filesystem and gallery observations", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:11:34Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:10:04Z", "operation": "Record result.png and a gallery entry with matching filename", "artifact_ids": ["C02-OUTPUT"], "outcome": "candidate_file_and_entry_recorded", "limitations": ["A copied/imported image and imported metadata could produce an equivalent gallery observation."]},
+        {"event_id": "C02-05", "source_kind": "fictional editor interaction record", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:11:40Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:10:10Z", "edit_session_id": "LAB-EDIT-S2", "operation": "Open the candidate output for a benign review edit", "artifact_ids": ["C02-OUTPUT"], "outcome": "interaction_recorded"},
+        {"event_id": "C02-06", "source_kind": "fictional editor export and file-write records", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:11:41Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:10:11Z", "edit_session_id": "LAB-EDIT-S2", "operation": "Report an edited JPEG export", "artifact_ids": ["C02-OUTPUT", "C02-EDIT"], "outcome": "export_reported_and_write_recorded", "limitations": ["No acquired bytes or retained edit project to verify the transformation; metadata survival is unknown."]},
+        {"event_id": "C02-07", "source_kind": "fictional application preview record", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:11:42Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:10:12Z", "operation": "Report creation of a preview from the edited path", "artifact_ids": ["C02-EDIT", "C02-THUMB"], "outcome": "derivation_reported", "limitations": ["Preview content was not acquired or compared."]},
+        {"event_id": "C02-08", "source_kind": "fictional authorized test-upload request", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:11:45Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:10:15Z", "transfer_id": "LAB-UPLOAD-U0", "recipient_id": "LAB-RECIPIENT-C", "operation": "Request transfer of the edited path to the LAB service", "artifact_ids": ["C02-EDIT"], "outcome": "requested"},
+        {"event_id": "C02-09", "source_kind": "fictional client transport failure", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:11:46Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:10:16Z", "transfer_id": "LAB-UPLOAD-U0", "operation": "Report connection failure before a completion receipt", "outcome": "failed_no_completion_recorded"},
+        {"event_id": "C02-10", "source_kind": "fictional authorized test-upload retry", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:11:48Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:10:18Z", "transfer_id": "LAB-UPLOAD-U1", "recipient_id": "LAB-RECIPIENT-C", "operation": "Retry the LAB transfer", "artifact_ids": ["C02-EDIT"], "outcome": "requested"},
+        {"event_id": "C02-11", "source_kind": "fictional service object-store receipt", "host_id": "HOST-C", "actor_id": "LAB-RECIPIENT-C", "clock_id": "CLOCK-C", "raw_timestamp": "2026-10-01T15:08:20Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:10:20Z", "transfer_id": "LAB-UPLOAD-U1", "object_id": "LAB-OBJECT-2", "operation": "Report stored object under the LAB recipient", "artifact_ids": ["C02-REMOTE"], "outcome": "service_reported_stored", "limitations": ["No received-object bytes, checksum, or recipient access record."]},
+        {"event_id": "C02-12", "source_kind": "fictional client completion result", "host_id": "HOST-A", "actor_id": "LAB-USER-A", "clock_id": "CLOCK-A", "raw_timestamp": "2026-10-01T15:11:51Z", "raw_timestamp_encoding": "ISO8601 UTC wall time", "normalized_utc": "2026-10-01T15:10:21Z", "transfer_id": "LAB-UPLOAD-U1", "object_id": "LAB-OBJECT-2", "operation": "Record a completion result for the retry", "outcome": "client_recorded_completion"}
+      ],
+      "edges": [
+        {"edge_id": "C02-E1", "from": "C02-SOURCE", "to": "C02-OUTPUT", "claim": "This host generated the candidate image from the referenced source", "support": ["C02-02", "C02-03", "C02-04"], "status": "generation_reported_origin_unresolved", "limits": ["No acquired output identity or process-linked generation proof; import/copied-metadata alternatives remain."]},
+        {"edge_id": "C02-E2", "from": "C02-OUTPUT", "to": "C02-EDIT", "claim": "The JPEG is an edited/re-encoded derivative", "support": ["C02-05", "C02-06"], "status": "derivation_reported", "limits": ["Edit-project and media comparisons are unavailable."]},
+        {"edge_id": "C02-E3", "from": "C02-EDIT", "to": "C02-THUMB", "claim": "The preview depicts the edited image", "support": ["C02-07"], "status": "derivation_reported", "limits": ["A preview is a separate representation; source bytes and full content remain unverified."]},
+        {"edge_id": "C02-E4", "from": "C02-EDIT", "to": "C02-REMOTE", "claim": "The service received the same exact JPEG bytes", "support": ["C02-10", "C02-11", "C02-12"], "status": "transfer_reported_content_identity_unresolved", "limits": ["The request and object IDs link reported completion; null hashes leave byte identity unresolved.", "No evidence establishes recipient viewing or further distribution."]}
+      ],
+      "negative_cases": [
+        {"negative_id": "C02-N1", "records": ["C02-04"], "prohibited_conclusion": "A gallery record proves local generation", "reason": "An import or copied metadata can support the same observation."},
+        {"negative_id": "C02-N2", "records": ["C02-06"], "prohibited_conclusion": "Missing workflow metadata proves deliberate concealment", "reason": "Metadata survival was not examined; normal export/re-encoding can change fields."},
+        {"negative_id": "C02-N3", "records": ["C02-08", "C02-09"], "prohibited_conclusion": "The first upload completed", "reason": "The matching record reports failure without a completion receipt."},
+        {"negative_id": "C02-N4", "records": ["C02-11", "C02-12"], "prohibited_conclusion": "The recipient viewed the source image or redistributed it", "reason": "Stored-object and client-completion claims do not establish access or later handling."}
+      ]
+    }
+  ]
+}
