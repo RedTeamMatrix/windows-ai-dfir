@@ -1,0 +1,120 @@
+{
+  "template_version": "1.0",
+  "template_only": true,
+  "instructions": [
+    "Replace placeholders before use; this file contains no acquired evidence.",
+    "Use one artifact entry per retained file or named stream.",
+    "Null hashes and timestamps mean unrecorded, not verified or absent.",
+    "Keep exact private source mappings in the authorized case record."
+  ],
+  "case_alias": "<case-alias>",
+  "source_acquisition_id": "acquisition-placeholder-01",
+  "bundle_id": "bundle-placeholder-01",
+  "bundle_type": "<sqlite|leveldb|session|registry|image-model|other>",
+  "source_context": {
+    "host_alias": "<host-alias>",
+    "account_alias": "<account-alias>",
+    "volume_aliases": [],
+    "platform_and_version": null,
+    "application_and_version": null,
+    "profile_or_runtime_context": null,
+    "private_source_mapping_reference": null
+  },
+  "acquisition": {
+    "method": "<record actual acquisition method>",
+    "tool_name": null,
+    "tool_version": null,
+    "parameters_or_procedure_reference": null,
+    "collector_alias": null,
+    "started_utc": null,
+    "ended_utc": null,
+    "source_activity_state": "unassessed",
+    "consistency_mechanism": "unassessed",
+    "snapshot_ids": [],
+    "snapshot_writer_results": [],
+    "included_source_volumes": [],
+    "interventions": [],
+    "completeness_assessment": "unassessed"
+  },
+  "artifacts": [
+    {
+      "artifact_id": "artifact-placeholder-01",
+      "bundle_role": "<primary|sidecar|index|attachment|model|configuration|other>",
+      "source_acquisition_id": "acquisition-placeholder-01",
+      "source_path_alias": "<source-path-alias>",
+      "source_object_type": "<file|named-stream|container|export|other>",
+      "named_stream": null,
+      "observation_status": "not_assessed",
+      "acquired_relative_path": null,
+      "bytes_acquired": null,
+      "hash": {
+        "algorithm": "SHA256",
+        "value": null,
+        "object_hashed": null,
+        "computed_utc": null,
+        "verification_status": "not_performed"
+      },
+      "timestamps": [
+        {
+          "timestamp_id": "timestamp-placeholder-01",
+          "source_type": "<filesystem|embedded-record|acquisition-clock|other>",
+          "semantics": "<what event the time represents>",
+          "raw_value": null,
+          "units": null,
+          "epoch": null,
+          "source_timezone": null,
+          "normalized_utc": null,
+          "conversion_method": null,
+          "clock_uncertainty": null
+        }
+      ],
+      "related_artifact_ids": [],
+      "external_references": [
+        {
+          "reference_locator": "<record or field containing the reference>",
+          "referenced_path_or_id_alias": "<reference-alias>",
+          "resolved_artifact_id": null,
+          "resolution_status": "not_assessed",
+          "limitation": null
+        }
+      ],
+      "limitations": []
+    }
+  ],
+  "analysis_copies": [
+    {
+      "analysis_copy_id": "analysis-copy-placeholder-01",
+      "parent_artifact_ids": ["artifact-placeholder-01"],
+      "relative_path": null,
+      "created_utc": null,
+      "copy_method": null,
+      "sha256": null,
+      "parent_hash_comparison": "not_performed",
+      "transformations_applied": []
+    }
+  ],
+  "analysis_runs": [
+    {
+      "analysis_run_id": "analysis-run-placeholder-01",
+      "input_analysis_copy_ids": ["analysis-copy-placeholder-01"],
+      "parser_name": null,
+      "parser_version": null,
+      "runtime_version": null,
+      "parameters_or_query_reference": null,
+      "started_utc": null,
+      "ended_utc": null,
+      "transformations": [],
+      "output_artifact_ids": [],
+      "warnings": [],
+      "limitations": []
+    }
+  ],
+  "custody_record_reference": null,
+  "publication_redactions": [],
+  "overall_limitations": ["Template has not been populated or used for an acquisition."],
+  "review": {
+    "reviewer_alias": null,
+    "reviewed_utc": null,
+    "status": "not_reviewed"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "template_version": "1.0",
+  "template_only": true,
+  "instructions": [
+    "Replace placeholders; this template asserts no factual finding.",
+    "Use one record per material claim and link preserved acquisition artifacts.",
+    "Claim levels can include presence, availability, use, execution, outcome, or attribution.",
+    "A conclusion must remain unassessed until supporting and conflicting evidence are evaluated."
+  ],
+  "case_alias": "<case-alias>",
+  "claim_id": "claim-placeholder-01",
+  "proposed_statement": "<state a specific observation or inference>",
+  "claim_level": "unassessed",
+  "assessment_status": "not_assessed",
+  "source_acquisition_ids": ["acquisition-placeholder-01"],
+  "host_aliases": [],
+  "account_or_session_aliases": [],
+  "evidence": [
+    {
+      "evidence_id": "evidence-placeholder-01",
+      "source_artifact_id": "artifact-placeholder-01",
+      "source_acquisition_id": "acquisition-placeholder-01",
+      "analysis_copy_id": "analysis-copy-placeholder-01",
+      "analysis_run_id": "analysis-run-placeholder-01",
+      "locator": {
+        "type": "<byte-offset|line|json-pointer|database-record|hive-key|other>",
+        "byte_offset": null,
+        "byte_length": null,
+        "line_number": null,
+        "json_pointer": null,
+        "database_table": null,
+        "record_key_or_id": null,
+        "hive_relative_key": null,
+        "value_name": null,
+        "export_row_reference": null
+      },
+      "observation": "<what the source actually records>",
+      "relationship_to_claim": "unassessed",
+      "inferential_step": null,
+      "timestamp_ids": [],
+      "identity_link_method": null,
+      "integrity_and_provenance_assessment": "unassessed",
+      "limitations": []
+    }
+  ],
+  "corroborating_evidence_ids": [],
+  "conflicting_evidence_ids": [],
+  "alternative_explanations": ["<record plausible alternatives and how they were evaluated>"],
+  "unresolved_questions": [],
+  "missing_or_inaccessible_sources": [],
+  "conclusion": {
+    "status": "not_assessed",
+    "supported_statement": null,
+    "unsupported_portion": null,
+    "confidence_and_basis": null,
+    "material_limitations": []
+  },
+  "review": {
+    "analyst_alias": null,
+    "reviewer_alias": null,
+    "reviewed_utc": null,
+    "status": "not_reviewed"
+  },
+  "publication": {
+    "public_statement": null,
+    "redaction_notes": [],
+    "approved_for_publication": false
+  }
+}
