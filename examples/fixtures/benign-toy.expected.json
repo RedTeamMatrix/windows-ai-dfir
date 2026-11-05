@@ -1,0 +1,36 @@
+{
+  "schema_version": "1.0",
+  "tool": "read_safetensors_header",
+  "tool_version": "1.0.0",
+  "input_name": "benign-toy.safetensors",
+  "file_bytes": 168,
+  "sha256": "908e2786188216b915b4001877916fc8b98a924f1b9f53cdd5fc30b2bb83ec3a",
+  "header_bytes": 152,
+  "header_sha256": "c40b276387f128f78f8122ef071fe067577fcc9fa9be47e6a5c54705d734df10",
+  "data_bytes": 8,
+  "metadata": {
+    "purpose": "benign static-inspection fixture",
+    "marker": "LAB-TOY-20261105"
+  },
+  "tensors": [
+    {
+      "name": "toy",
+      "dtype": "F32",
+      "shape": [
+        2
+      ],
+      "data_offsets": [
+        0,
+        8
+      ]
+    }
+  ],
+  "inspection_level": "bounded_header_structure_and_range_bounds",
+  "limits": [
+    "No tensor loading, model execution, inference, or content classification.",
+    "Metadata is untrusted file content, not an authenticated assertion.",
+    "Dtype semantics, shape-to-byte consistency, overlaps, and full format conformance are not validated.",
+    "A before/after stat check is not a coherent acquisition guarantee.",
+    "No full-file hash was computed unless sha256 is populated."
+  ]
+}
